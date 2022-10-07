@@ -3,8 +3,8 @@ const dotenv = require('dotenv')
 const { app } = require('./app')
 
 // Utils
-const { initModels } = require('./models/initModels')
 const { db } = require('./utils/database.util')
+const { initModels } = require('./models/initModels')
 
 dotenv.config()
 

@@ -1,8 +1,7 @@
-// fn -> controller function or middleware
-const catchAsync = fn => {
-	return (req, res, next) => {
-		fn(req, res, next).catch(err => next(err));
-	};
-};
+const catchAsync = (fn) => {
+    return (req, res, next) => {
+        fn(req, res, next).catch((err) => next(err))
+    }
+}
 
-module.exports = { catchAsync };
+module.exports = { catchAsync }
